@@ -12,9 +12,8 @@
   let pageNum = 1;
   let totalPages = 0;
   let scale = 1.0;
-
-  // Disable worker for Budibase
-  pdfjsLib.GlobalWorkerOptions.workerSrc = null;
+  
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "";
   pdfjsLib.disableWorker = true;
 
   async function loadPdf(url) {
