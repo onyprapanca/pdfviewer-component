@@ -1,22 +1,13 @@
 <script>
   import { getContext } from "svelte"
+  import PdfViewer from 'svelte-pdf';
 
   const { styleable } = getContext("sdk")
   const component = getContext("component")
 
-  export let label
-
-
-  const handleClick = () => {
-    window.print()
-    console.log('handle print')
-    component.handleClick()
-  }
-
+  export let text
 </script>
 
 <div use:styleable={$component.styles}>
-  <button on:click={handleClick}>
-    {label}
-  </button>
+  <PdfViewer url={text} />
 </div>
