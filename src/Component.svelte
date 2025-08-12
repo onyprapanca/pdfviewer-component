@@ -3,10 +3,7 @@
   import PdfViewer from 'svelte-pdf';
   import * as pdfjs from 'pdfjs-dist/build/pdf';
 
-  pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.mjs',
-    import.meta.url
-  ).toString();
+  pdfjs.GlobalWorkerOptions.workerSrc = "https://app.unpkg.com/pdfjs-dist@5.4.54/files/build/pdf.worker.mjs";
 
   const { styleable } = getContext("sdk")
   const component = getContext("component")
