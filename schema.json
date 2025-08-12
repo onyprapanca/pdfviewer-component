@@ -2,10 +2,10 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "print_button",
-    "friendlyName": "Print Button",
-    "description": "A button that triggers the print dialog",
-    "icon": "Button",
+    "name": "PdfViewer",
+    "friendlyName": "PdfViewer",
+    "description": "starwealth custom pdf viewer budibase",
+    "icon": "Text",
     "settings": [
       {
         "type": "text",
