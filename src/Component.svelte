@@ -1,7 +1,6 @@
 <script>
   import { getContext } from "svelte"
-  import PdfViewer from 'svelte-pdf';
-  import * as pdfjs from 'pdfjs-dist/build/pdf';
+  import Pdfviewer from "./pdfviewer.svelte"
 
   pdfjs.GlobalWorkerOptions.workerSrc = "https://app.unpkg.com/pdfjs-dist@5.4.54/files/build/pdf.worker.mjs";
 
@@ -12,5 +11,5 @@
 </script>
 
 <div use:styleable={$component.styles}>
-  <PdfViewer url={text} />
+  <Pdfviewer src={text} />
 </div>
